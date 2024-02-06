@@ -1,0 +1,370 @@
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100dvh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Base styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  /* Replace with your preferred font */
+  font-weight: 300;
+  color: #ffffff;
+  /* background-color: rgb(18, 18, 18); */
+  background-image: url('./images/bg2.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  height: 100%;
+}
+
+.about-section {
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* height: 100%; */
+}
+
+.about-heading {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-intro {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+/* Section styling */
+.about-sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about-section-item {
+  /* flex-basis: 30%; */
+  padding: 20px;
+  min-width: 300px;
+  max-width: 40%;
+  text-align: left;
+}
+
+.section-icon {
+  font-size: 36px;
+  color: #333;
+  /* Adjust icon color as needed */
+  margin-bottom: 10px;
+}
+
+.section-heading {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.section-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section-list li {
+  margin-bottom: 10px;
+}
+
+.project img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Project card styling (customize as needed) */
+.project {
+  text-align: start;
+  /* border: 1px solid #ccc; */
+  background-color: rgba(50, 50, 50, 0.3);
+  /* border-radius: 5px; */
+  /* padding: 20px; */
+  margin-bottom: 20px;
+  width: 300px;
+  /* max-width: 450px; */
+  backdrop-filter: blur(4px);
+}
+
+
+.project-inside {
+  text-align: start;
+  padding: 20px;
+
+}
+.project:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.project h3 {
+  margin-top: 0;
+}
+
+.project-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2%;
+
+}
+
+
+
+/* Base styles */
+.header-nav {
+  font-family: monospace;
+  background-color: rgba(18, 18, 18, 0);
+  /* Adjust background color as needed */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Left side content */
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Navigation links */
+
+
+
+
+.header-link {
+  margin-right: 15px;
+}
+
+.header-link a {
+  text-decoration: none;
+  color: #f1efef;
+  font-weight: bold;
+  /* Adjust link color as needed */
+}
+
+.header-link a.active {
+  color: #3a3838;
+  /* Adjust active link color as needed */
+  font-weight: bold;
+  /* Optional: Add bold for emphasis */
+}
+
+/* Right side content */
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-email {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #858080;
+  /* Adjust email color as needed */
+}
+
+@media only screen and (max-width: 768px) {
+
+  /* Adjust breakpoint as needed */
+  .header-links-lg {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: absolute;
+    right: 5px;
+    top: 50px;
+    list-style: none;
+    padding: 15px;
+    background-color: rgb(100, 100, 100);
+    border-radius: 5px;
+  }
+
+
+
+  .menu {
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 35px;
+  }
+
+  .header-links-lg li {
+    margin-top: 7px;
+    margin-bottom: 3px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .menu {
+    display: none;
+  }
+
+  .header-links-lg {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.header {
+  z-index: 2;
+}
+
+.header-links-open {
+  display: block;
+  /* Additional dropdown styling as needed */
+}
+
+/* Base styles */
+.footer {
+  background-color: rgb(18, 18, 18);
+  /* Adjust background color as needed */
+  padding: 20px;
+  text-align: center;
+  /* Align text centrally */
+}
+
+/* Container */
+.footer-container {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  align-items: center;
+}
+
+/* Content section */
+.footer-content {
+  margin-right: 20px;
+  /* Adjust spacing as needed */
+}
+
+.footer-copyright {
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 10px;
+  /* Adjust spacing between links */
+}
+
+/* Social media section */
+.footer-social {
+  display: flex;
+  gap: 15px;
+  /* Adjust spacing between icons */
+}
+
+.footer-social a {
+  text-decoration: none;
+  color: white;
+  /* Adjust icon color as needed */
+}
+
+/* Base styles */
+.home {
+  /* ... other styles */
+}
+
+.hero {
+  text-align: center;
+  /* Center content horizontally */
+}
+
+/* Button styling */
+.button {
+  display: inline-block;
+  margin: 0.4%;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  /* Add rounded corners */
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out, background-color 0.2s ease-in;
+  /* Add smooth hover and click animation */
+}
+
+.button:hover,
+.button:focus {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+  /* Slightly upscale on hover/click */
+}
+
+.contact-form {
+  min-width: 300px;
+  max-width: 35%;
+}
+
+.form-fields {
+  margin-bottom: 20px;
+  /* Adjust spacing as needed */
+}
+
+label {
+  display: block;
+  /* Display labels on separate lines */
+  margin-bottom: 5px;
+  /* Add spacing between labels and fields */
+}
+
+input,
+textarea {
+  width: 100%;
+  /* Ensure fields take full width */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  /* Add rounded corners */
+  margin-bottom: 10px;
+  /* Add spacing between fields */
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  /* Adjust background color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
