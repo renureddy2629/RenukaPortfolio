@@ -138,6 +138,20 @@ body {
   gap: 2%;
 
 }
+.resume-button {
+  padding: 10px 20px;
+  background-color: #0d0d0e;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: #101010;
+}
 
 
 

@@ -41,11 +41,19 @@ const Portfolio = () => {
     console.log(projects)
     return (
         <section className="about-section">
-            <div style={{ justifyContent: 'center', alignItems: 'center', display: 'flex', flexDirection: 'column' }}  >
+            <div style={{ justifyContent: 'center', alignItems: 'center', display: 'flex', flexDirection: 'column' }}>
                 <div style={{ display: 'flex', gap: '10px', justifyContent: 'center ', alignItems: 'center' }}>
+                    <h2 style={{ marginBottom: '30px', fontSize: '4em' }} className="section-heading">Projects</h2>
+                    <a
+   href={"https://firebasestorage.googleapis.com/v0/b/renuka-pasam.appspot.com/o/Resume.pdf?alt=media&token=fe03f62c-0eab-4d9d-85e7-77b5058b8229"}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="resume-button"
+    style={{ position: 'absolute', top: '80px', right: '10px', cursor: 'pointer' }}
+>
+    Resume
+</a>
 
-                    <FontAwesomeIcon icon={faCode} className="section-icon" />
-                    <h2 style={{ marginBottom: 30 }} className="section-heading">Projects</h2>
                 </div>
                 <div className="project-section" style={{ display: 'flex' }}>
                     {projects.map((project) => (
@@ -54,7 +62,7 @@ const Portfolio = () => {
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
 export default Portfolio;
