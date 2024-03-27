@@ -113,10 +113,6 @@ const About = () => {
 
             </div>
 
-
-
-
-
             {/* Other about content, hobbies, interests, etc. */}
         </section>
     );

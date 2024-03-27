@@ -15,7 +15,7 @@ const Footer = () => {
               <a className='App-link' style={{ textDecoration: 'none' }} href="mailto:renukareddy442@mail.com">
                 <FontAwesomeIcon icon={faGoogle} /> Email Me
               </a>
-              <a className='App-link' style={{ textDecoration: 'none' }} href="www.linkedin.com/in/renukapasam.linkedin.com/">
+              <a className='App-link' style={{ textDecoration: 'none' }} href="https://www.linkedin.com/in/renukapasam/">
                 <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
               </a>
               <a className='App-link' style={{ textDecoration: 'none' }} href="https://github.com/renureddy2629">
